@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
+import com.evgenii.jsevaluator.JsEvaluator;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,9 +25,8 @@ public class MainActivity extends Activity {
         webView = (WebView) findViewById(R.id.webView);
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        AssetManager assetManager = getAssets();
-
         webView.loadUrl("file:///android_asset/web.html");
+
     }
 
     @Override
@@ -38,5 +39,18 @@ public class MainActivity extends Activity {
         super.onPause();
     }
 
-
+   public String convertInputStreamToString(InputStream inputStream) {
+       try {
+           BufferedReader r = new BufferedReader(new InputStreamReader(inputStream));
+           StringBuilder total = new StringBuilder();
+           String line;
+           while ((line = r.readLine()) != null) {
+               total.append(line);
+           }
+           return total.toString();
+       } catch (IOException e) {
+           e.printStackTrace();
+       }
+       return "";
+   }
 }
