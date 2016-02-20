@@ -45,14 +45,12 @@ boardReady('Ak0D', function (board) {
            var blinkVar=1;
            var blinkFunction=function(){
              blinkVar=blinkVar+1;
-             if(blinkVar%2==0){
+           if(blinkVar%2==0){
              led1.on();
              led2.off();
-             document.getElementById("demo-area-03-light").setAttribute("class","on");
            }else{
              led1.off();
              led2.on();
-              document.getElementById("demo-area-03-light").setAttribute("class","off");
             }
              _E8_A8_88_E6_99_82_E5_99_A8 = setTimeout(blinkFunction,500);
            };
