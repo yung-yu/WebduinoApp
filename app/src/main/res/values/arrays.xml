@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_list">
+        <item>控制 Led</item>
+        <item>三色 Led</item>
+        <item>蜂鳴器</item>
+    </string-array>
+</resources>

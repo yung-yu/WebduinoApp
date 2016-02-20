@@ -1,0 +1,39 @@
+#demo-area-01-light img {
+  height: 200px;
+  display: none;
+}
+
+#demo-area-01-light.on #demo-area-01-on {
+  display: inline-block;
+}
+
+#demo-area-01-light.off #demo-area-01-off {
+  display: inline-block;
+}
+
+#demo-area-02-light img {
+  position: relative;
+  height: 200px;
+  display: none;
+}
+
+#demo-area-02-light.on #demo-area-02-on {
+  display: inline-block;
+}
+
+#demo-area-02-light.off #demo-area-02-off {
+  display: inline-block;
+}
+#demo-area-03-light img {
+  position: relative;
+  height: 200px;
+  display: none;
+}
+
+#demo-area-03-light.on #demo-area-03-on {
+  display: inline-block;
+}
+
+#demo-area-03-light.off #demo-area-03-off {
+  display: inline-block;
+}
